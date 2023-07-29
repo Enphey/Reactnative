@@ -1,11 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Cat from './componnents/Cat'; 
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import Recap from './Homework/Recap'
 
-export default function App() {
+const App = () => {
   return (
     <View>
-      <Cat/>
+      <Recap/>
     </View>
-  );
+  )
 }
+
+export default App
+
+const styles = StyleSheet.create({
+   container:{
+      flex:1,
+      justifyContent:'center',
+      alignItems:'center'
+   },
+})
