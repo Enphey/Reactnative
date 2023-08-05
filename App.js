@@ -1,11 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Recap from './Homework/Recap'
+import TouchablePractice from './componnents/TouchablePractice '
+import Example_useEffect from './componnents/Example_useEffect'
+import UseEffectFlatList from './componnents/UseEffectFlatList'
 
 const App = () => {
   return (
-    <View>
-      <Recap/>
+    <View style={styles.container}>
+     {/* <TouchablePractice/> */}
+     {/* <Example_useEffect/> */}
+     <UseEffectFlatList/>
     </View>
   )
 }
@@ -13,9 +17,7 @@ const App = () => {
 export default App
 
 const styles = StyleSheet.create({
-   container:{
-      flex:1,
-      justifyContent:'center',
-      alignItems:'center'
-   },
+  container:{
+    flex:1,
+  }
 })
