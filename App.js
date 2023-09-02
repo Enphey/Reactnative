@@ -1,23 +1,28 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { View, Text , Button} from 'react-native'
 import React from 'react'
-import TouchablePractice from './componnents/TouchablePractice '
-import Example_useEffect from './componnents/Example_useEffect'
-import UseEffectFlatList from './componnents/UseEffectFlatList'
+import { NavigationContainer } from '@react-navigation/native'
+import {createNativeStackNavigator} from '@react-navigation/native-stack'
+import HomeScreen from './Screens/HomeScreen'
+import DetailsScreen from './Screens/DetailsScreen'
+
+const Stack = createNativeStackNavigator()
 
 const App = () => {
   return (
-    <View style={styles.container}>
-     {/* <TouchablePractice/> */}
-     {/* <Example_useEffect/> */}
-     <UseEffectFlatList/>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='Home'>
+        <Stack.Screen 
+        name = 'Home' 
+        component={HomeScreen} 
+        options={{title:'Overview'}}
+        />
+        <Stack.Screen 
+        name='Details' 
+        component={DetailsScreen}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   )
 }
 
 export default App
-
-const styles = StyleSheet.create({
-  container:{
-    flex:1,
-  }
-})
