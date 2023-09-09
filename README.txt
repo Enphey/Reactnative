@@ -1,6 +1,8 @@
 ID: 2113110304
 Name: Nathig Becheku
-      02/09/2023
-1. Take a questionnaire (from Aj.Lalita) 
-2. React Navigator : Stack Navigator
-3. In-class exercise
+      09/09/2023
+- React Navigator : Stack Navigator with passing parameters to routes
+
+- React Navigator : Drawer Navigator
+
+- In-class exercise
