@@ -1,8 +1,8 @@
 ID: 2113110304
 Name: Nathig Becheku
-      09/09/2023
-- React Navigator : Stack Navigator with passing parameters to routes
+      16/09/2023
+- React Navigator : Drawer Navigator (Continue)
 
-- React Navigator : Drawer Navigator
+- React Navigator : Bottom Tabs Navigator
 
 - In-class exercise
